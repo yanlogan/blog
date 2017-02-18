@@ -1,0 +1,5 @@
+<head>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ "/sass/main.css" | absolute_url }}">
+  <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"> -->
+</head>

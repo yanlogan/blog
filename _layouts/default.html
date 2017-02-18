@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "ru" }}">
+
+  {% include head.html %}
+
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="main">
+        <nav class="menu top">
+          <div class="menu-item"><a href="{{ "start" | absolute_url }}">Старт</a></div>
+          <div class="menu-item"><a href="{{ "blog" | absolute_url }}">Блог</a></div>
+          <div class="menu-item"><a href="{{ "tools" | absolute_url }}">Инструменты</a></div>
+          <div class="menu-item"><a href="{{ "resources" | absolute_url }}">Ресурсы</a></div>
+        </nav>
+
+
+        {{content}}
+
+        <nav class="menu bottom">
+          <div class="menu-item"><a href="{{ "/" | absolute_url }}">Домой</a></div>
+          <div class="menu-item"><a href="{{ "about" | absolute_url }}">О сайте</a></div>
+          <div class="menu-item"><a href="{{ "contact" | absolute_url }}">Контакты</a></div>
+        </nav>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+
+</html>

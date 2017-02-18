@@ -1,0 +1,13 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.home::after {
+  content: "";
+  display: block;
+  clear: both;
+}

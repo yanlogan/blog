@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="left">
+    <div>
+      Начни здесь
+    </div>
+    <div>
+      Новая статья
+      {% for post in site.posts limit: 1 %}
+        <p>{{ post.title }}</p>
+        <div>
+          {{ post.excerpt }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="right">
+    <div>
+      Я в социальных сетях
+    </div>
+    <div>
+      Популярные статьи
+      {% for post in site.posts limit: 5 %}
+      <div>
+        <a href="{{ post.url }}">
+          <div>
+            <img src="" alt="">
+          </div>
+        <div>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

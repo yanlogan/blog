@@ -1,0 +1,91 @@
+$title: #7e7f9a;
+$copyright: #7e7f9a;
+$nav-links: #f9f8f8;
+$top-nav: #6b2ad6;
+$top-nav-hover: #511ca4;
+$bottom-nav: #302542;
+$bottom-nav-hover: #3f3054;
+
+body {
+  background: {
+    color: rgba(0, 0, 0, 0.78);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  background: {
+    color: #fff;
+  }
+  font: {
+    family: 'Roboto', sans-serif;
+    size: 16px;
+  }
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 10px 20px;
+  a {
+    color: $nav-links;
+    text-transform: uppercase;
+    font: {
+      family: 'Poiret One', cursive;
+      size: 22px;
+      weight: 400;
+    }
+  }
+}
+
+.top {
+  background: {
+    color: $top-nav;
+  }
+  .menu-item {
+    &:hover {
+      background: {
+        color: $top-nav-hover;
+      }
+    }
+  }
+}
+
+.bottom {
+  background: {
+    color: $bottom-nav;
+  }
+  .menu-item {
+    &:hover {
+      background: {
+        color: $bottom-nav-hover;
+      }
+    }
+  }
+}
+
+.header, .footer {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+}
+
+.header a {
+  font-size: 36px;
+  color: $title;
+}
+
+.footer {
+  font-size: 14px;
+  color: $copyright;
+}
